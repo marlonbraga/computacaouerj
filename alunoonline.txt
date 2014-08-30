@@ -1,0 +1,543 @@
+
+
+<html>
+
+<head>
+
+  <title>Aluno Online</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="KeyWords" content="Aluno Online UERJ SAG CETREINA PROTOCOLO">
+
+<style TYPE="text/css">
+  <!--
+      A.LINKNAOSUB { text-decoration: none; color: #000066;}
+       .LINKNAOSUBB {  color: #FFFFFF; text-decoration: none;}
+       .linalt2 {  line-height: 15px; top-margin: 15px;}
+  -->
+</style>
+
+</head>
+
+<LINK rel="stylesheet" TYPE="text/css" HREF="../estilo_alunoonline.css">
+
+<script language="JavaScript">
+
+</script>
+
+<body>
+
+<table height="100%" width="100%" border="0" cellspacing=0 cellpadding=0>
+
+    <tr><td align="center" valign="top">
+                            <div>
+                                <table id="table_cabecalho_rodape" height="95" width="100%" frame="hsides" cellspacing="0" cellpadding="0">
+
+                                   <tr height="100%"  valign="middle">
+
+                                      <td width="90" valign="middle" align="center">
+                                          <img src="../images/logo_uerj_cor_fundo_transparente.gif" width="70" height="75" border="0">
+                                      </td>
+
+                                      <td align="center" valign="middle">
+
+                                          <table id="table_cabecalho_rodape" border="0" cellspacing="0" cellpadding="2">
+                                                 <tr><td align="center" valign="top"><font style="font-size:16pt;">Aluno Online</font></td></tr>
+                                                 <tr><td align="center" valign="middle"><font style="font-size:10pt;"><b>&nbsp;2014/1&nbsp;</b></font></td></tr><tr><td align="center" valign="middle"><font style="font-size:16pt;">201110252811 - Marlon Dantas Braga</font></td></tr>
+                                          </table>
+
+                                      </td>
+
+                                      <td width="90" valign="middle" align="center">
+                                          <div><img src="../images/logo_alunoonline.gif" width="70" height="40" border="0"></div>
+                                      </td>
+                                   </tr>
+
+                                </table>
+                            </div>
+                        </td></tr>
+
+      
+
+    <tr height="100%"><td align="center" valign="middle">
+
+<!--  INÍCIO DO CONTEÚDO DA PÁGINA -->
+
+            
+<script type="text/javascript" language="JavaScript">
+<!--
+
+
+function envia(programa,bloqueado)
+{
+
+    if ( programa == "../id_solicita/id_solicitacao_entrada.php" )
+    {
+       versao=navigator.appVersion;                   
+       posicaoNet=versao.indexOf("."); 
+       posicaoIE=versao.indexOf("MSIE ");              
+       posicaoIE=posicaoIE+5;						
+       versaoNet=versao.substring(0,posicaoNet);  
+       versaoIE=versao.charAt(posicaoIE);  
+       programa="../id_solicita/id_solicitacao_entrada.php?p"
+       if (navigator.appName!="Netscape" && navigator.appName!="Microsoft Internet Explorer") 
+       {
+	   window.alert("Para solicitar inscricão em disciplina é necessário utilizar Netscape 7 ou Internet Explorer 5.") ;
+          return(false); 
+	}
+       else
+       if (navigator.appName=="Netscape" && versaoNet<5) 
+       {
+	   window.alert("Para solicitar inscricão em disciplina é necessário atualizar a versão de seu browser.") ;
+          return(false); 
+       }
+       else  
+       if (navigator.appName=="Microsoft Internet Explorer" && versaoIE<5) //era 6
+       {
+	   window.alert("Para solicitar inscricão em disciplina é necessário atualizar a versão de seu browser.") ;
+          return(false); 
+	}
+    }
+
+
+    if (bloqueado==1)
+       {
+        window.alert("Acesso  temporariamente  bloqueado.");
+       }
+    else
+       {
+        document.formulario.action=programa;
+        document.formulario.submit();
+       }
+}
+
+function abre_manual_aluno()
+{
+    open("http://www.sr1.uerj.br/dep/conteudo.php?login=&sessionid=&referencia=dep&codificacao=029:007:001", "Manual do Aluno");
+}
+
+function abreinstancia()
+{
+   open("http://www.alunoonline.uerj.br/id/login/id_login.php","AlunoOnline","directories=no,resizable=yes,scrollbars=yes,status=yes,width=775,height=500,top=10,left=10");
+}
+
+function enviamsg()
+{
+   window.alert("Acesso temporariamente bloqueado.");
+}
+
+-->
+</script>
+
+<form name="formulario" method="post">
+<input type="hidden" name="matricula" value="201110252811">
+<input type="hidden" name="nome" value="Marlon Dantas Braga">
+<input type="hidden" name="periodo_letivo" value="2014/1">
+<input type="hidden" name="flg_logado" value="@FLG_LOGADO@">
+
+<table border=0 style='width:750px;font-size=12px;font-family:Verdana,\"Times New Roman\",Georgia,Serif;' cellspacing="0" cellpadding="0">
+
+     
+                  <tr>
+                        <td colspan=5 align='center'>
+                            &nbsp;
+                        </td>
+                  </tr>
+                  <tr>
+                      <td colspan=5 align='center'>
+                         <div  id='menu_titulo_blocos' style='BackGround:#CC0000;'><b>Mensagens</b></div><div  id='menu_caixa_bloco' >
+                        <div style='height:5px;width:100%; float:left; text-align:right;'>
+                             <b>&nbsp;</b>
+                        </div>
+              
+                        <div style='height:36px;width:5%; float:left; text-align:right; color:#4169E1; '>
+                             <b>1.&nbsp;</b>
+                        </div>
+
+                        <div style='height:36px;width:95%; text-align:left; color:#4169E1; float:left;'> 
+                            <b>As notas digitadas durante o período de RFN (03/02 a 10/02/2014)  só serão validadas após o fechamento (processamento das notas)&nbsp;</b>                  
+                        </div>
+                  
+                        <div style='height:36px;width:5%; float:left; text-align:right; color:#4169E1; '>
+                             <b>2.&nbsp;</b>
+                        </div>
+
+                        <div style='height:36px;width:95%; text-align:left; color:#4169E1; float:left;'> 
+                            <b>Atualize todo semestre o levantamento sobre necessidades especiais e acessibilidade do Projeto UERJ Acessível.&nbsp;</b>                  
+                        </div>
+                    <div style='height:5;width:100%; float:left; text-align:right;'>
+                      <b>&nbsp;</b>
+                 </div>
+              </div>
+                      </td>
+                 </tr>
+              
+
+     <tr>
+           <td colspan=3 align='center'>
+               &nbsp;
+           </td>
+     </tr>
+
+     <tr>
+           <td style='text-align:center' valign="top" width=32%>
+                <div  id='menu_titulo_blocos' ><b>Recadastramento</b></div><div  id='menu_caixa_bloco' >         <div style='width:100%; height:5px; float:left;'>
+                                &nbsp;
+                           </div>
+                 
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../requisicaoaluno/requisicaoacesso.php?requisicao=AlteracaoSenha', 0 ); return false;">
+                                  <b>Alteração de Senha</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../recadastramento_dados_contato/recadastramento_dados_contato.php', 0 ); return false;">
+                                  <b>Dados para Contato</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../recadastramento_dados_pessoais/recadastramento_dados_pessoais.php', 0 ); return false;">
+                                  <b>Dados Pessoais</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     </div><div style='width:100%; float:left;'>&nbsp;</div><div  id='menu_titulo_blocos' ><b>Cetreina / Protocolo / Outros</b></div><div  id='menu_caixa_bloco' >         <div style='width:100%; height:5px; float:left;'>
+                                &nbsp;
+                           </div>
+                 
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../cartaouniversitario/cartao_universitario.php', 0 ); return false;">
+                                  <b>Cartão Universitário</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('http://www5.uerj.br/cetreina', 0 ); return false;">
+                                  <b>Estágios Externos</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../protocolo/montaindex.php', 0 ); return false;">
+                                  <b>Protocolo DAA</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a target = "_blank" href='http://www.ementario.uerj.br/pesquisa.html201110252811' class='LINKNAOSUB' style='color:#4169E1;' >
+                                  <b>Ementa de Disciplina</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a target = "_blank" href='http://www.dep.uerj.br/paginas_internas/fluxogramas.html' class='LINKNAOSUB' style='color:#4169E1;' >
+                                  <b>Fluxogramas dos Cursos</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a target = "_blank" href='http://www.dep.uerj.br/paginas_internas/manuais_manual_do_aluno.html' class='LINKNAOSUB' style='color:#4169E1;' >
+                                  <b>Manual do Aluno</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a target = "_blank" href='https://docs.google.com/a/latic.uerj.br/forms/d/1xcLM4kID1tV7idGJGC2M0BFVbMQd_gqB_lANHCDbnS8/viewform' class='LINKNAOSUB' style='color:#4169E1;' >
+                                  <b>Projeto UERJ Acessível</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     </div><div style='width:100%; float:left;'>&nbsp;</div>
+           </td>
+           <td align="center" width=2%>
+                &nbsp;
+           </td>
+           <td style='text-align:center' valign="top" width=32%>
+                <div  id='menu_titulo_blocos' ><b>Consulta Acadêmica</b></div><div  id='menu_caixa_bloco' >         <div style='width:100%; height:5px; float:left;'>
+                                &nbsp;
+                           </div>
+                 
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=AtividadesRealizadas', 0 ); return false;">
+                                  <b>Atividades Realizadas</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=DisciplinasRealizadas', 0 ); return false;">
+                                  <b>Disciplinas Realizadas</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../disemcur/disemcur.php', 0 ); return false;">
+                                  <b>Disciplinas em Curso</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=DisciplinasCurriculo', 0 ); return false;">
+                                  <b>Disciplinas do Curriculo</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../notasdoperiododoaluno/notasparciais.php', 0 ); return false;">
+                                  <b>Notas do Período</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../pendencias/pendencias.php', 0 ); return false;">
+                                  <b>Pendências de Documentos</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=SinteseFormacao', 0 ); return false;">
+                                  <b>Síntese da Formação</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=SituacaoEnade', 0 ); return false;">
+                                  <b>Situação no ENADE</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     </div><div style='width:100%; float:left;'>&nbsp;</div><div style='width:100%; float:left;'>&nbsp;</div><div style='width:100%; float:left;'>&nbsp;</div><div style='width:100%; float:left;'><button type='submit' name='Encerrar' onClick='window.close();'><img align=center src='../images/botao_encerrar.gif'></button></div>
+           </td>
+           <td align="center" width=2%>
+                &nbsp;
+           </td>
+           <td align="center" valign="top" width=32%>
+                <div  id='menu_titulo_blocos' ><b>Plano de Turma</b></div><div  id='menu_caixa_bloco' >         <div style='width:100%; height:5px; float:left;'>
+                                &nbsp;
+                           </div>
+                 
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=RequisitosACursar', 0 ); return false;">
+                                  <b>Disciplinas a Cursar</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=UniversaisACursar', 0 ); return false;">
+                                  <b>Disciplinas Universais</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('../id_consultas/id_sel_unidade.php', 0 ); return false;">
+                                  <b>Horário das Turmas</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=TabelaHorarioUerjCap', 0 ); return false;">
+                                  <b>Tab. de Horário UERJ / CAP</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     </div><div style='width:100%; float:left;'>&nbsp;</div><div  id='menu_titulo_blocos' ><b>Inscrição em Disciplinas</b></div><div  id='menu_caixa_bloco' >         <div style='width:100%; height:5px; float:left;'>
+                                &nbsp;
+                           </div>
+                 
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=AceitarTermosInscricao', 0 ); return false;">
+                                  <b>Solicitar Inscrição</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=AbrirRamificacao&pag=1', 0 ); return false;">
+                                  <b>Abrir Ramificação</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=AbrirRamificacao&pag=3', 0 ); return false;">
+                                  <b>Excluir Ramificação</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=SidFinal', 0 ); return false;">
+                                  <b>Consultar Inscrição</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     
+                        <div style='width:15%; float:left;'>
+                             <img src='../images/lapis_vermelho.gif' width='22' height='16'>
+                        </div>
+
+                        <div id='menu_linha_item' style='width:85%; height:25px; text-align:left; float:left;'> 
+                            <a  href='#' class='LINKNAOSUB' style='color:#4169E1;' onClick="javascript:envia('requisicao.php?requisicao=RID', 0 ); return false;">
+                                  <b>Resultado da Inscrição</b>
+                            </a>                  
+                        </div>
+                        <br>
+                     </div><div style='width:100%; float:left;'>&nbsp;</div>
+           </td>
+     </tr>
+<!--
+     <tr>
+           <td colspan=3 align='center'>
+               <input type='submit' name='Encerrar' value='Encerrar' onClick='window.close();'> 
+           </td>
+     </tr>
+-->
+</table>
+
+</form>
+
+
+<!--  FINAL DO CONTEÚDO DA PÁGINA -->
+
+    </td></tr>
+
+    <tr><td align="center" valign="bottom">
+       <div>
+            <table id="table_cabecalho_rodape" width="100%"  frame="hsides" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="120" valign="middle" align="center"><img src="../../images/logo_dinfo.gif" width="69" height="29" border="0"></a></td>
+                    <td align="center"><p style="font-size:6pt;">&copy; 2012, Universidade do Estado do Rio de Janeiro. Todos os Direitos Reservados.</p></td>
+                    <td width="120" valign="middle" align="center"><img src="../../images/logo_sr1.gif" width="50" height="40" border="0"></a></td>
+                </tr>
+            </table>
+       </div>
+                      </td></tr>
+
+</table>
+
+</body>
+
+</html>

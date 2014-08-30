@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Avaliação de Professores</title>
+		<link rel="stylesheet" type="default.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+	</head>
+	<body>
+		<?php
+			include('banco.php');
+			include('funcoes.php');
+			$sql1="SELECT professores.`id` AS  `idProf` ,  `nome` ,  `departamento` , avaliacao.`id` AS  `idAval` ,  `professor` , `disciplina` ,  `c1` ,  `c2` ,  `c3` ,  `c4` ,  `c5` ,  `c6` ,  `c7` ,  `c8` ,  `c9` ,  `c10` ,  `c11` ,  `c12` ,  `c13` ,  `c14` , `c15` ,  `comentarios` FROM  `professores` ,  `avaliacao` ";
+			$sql2=" AND professores.`id`=";
+			$sql3=" AND professores.`disciplina`=";
+			$sql4="";
+			$sql5="";
+			$where=false;
+				if(isset($_REQUEST['id'])){
+					$id=$_REQUEST['id'];
+					$sql2=$sql2."$id ";
+				}
+				if(isset($_REQUEST['disciplina'])){
+					$id=$_REQUEST['disciplina'];
+					$sql3=$sql3."$disciplina ";
+				}
+				$sql=$sql1.$sql2.$sql3;
+				echo "<p><br><br><b> >> $sql</b><br><br></p>";
+				echo"	<p>
+							<p>&nbsp;</p><p>&nbsp;</p>
+						</p>";	
+				$res=mysql_query($sql);
+				$linha=mysql_fetch_assoc($res);
+
+				while($linha){
+					$idProf=$linha['idProf'];
+					$nome=$linha['nome'];
+					$dep=$linha['departamento'];
+					$dep=$linha['departamento'];
+					$idAval=$linha['idAval'];
+					$professor=$linha['professor'];
+					$disciplina=$linha['disciplina'];
+					$c1=$linha['c1'];
+					$c2=$linha['c2'];
+					$c3=$linha['c3'];
+					$c4=$linha['c4'];
+					$c5=$linha['c5'];
+					$c6=$linha['c6'];
+					$c7=$linha['c7'];
+					$c8=$linha['c8'];
+					$c9=$linha['c9'];
+					$c10=$linha['c10'];
+					$c11=$linha['c11'];
+					$c12=$linha['c12'];
+					$c13=$linha['c13'];
+					$c14=$linha['c14'];
+					$c15=$linha['c15'];
+					$comentarios=$linha['comentarios'];
+		
+					if($dep==1){$nome_dep="Análise Matemática";}
+					else if($dep==2){$nome_dep="Estruturas Matemáticas";}
+					else if($dep==3){$nome_dep="Geometria e Representação Gráfica";}
+					else if($dep==4){$nome_dep="Informática e Ciência da Computação";}
+					else if($dep==5){$nome_dep="Estatística";}
+					else if($dep==6){$nome_dep="Matemática Aplicada";}
+
+					$linha=mysql_fetch_assoc($res);
+				}
+				?>
+					<!-- LISTA DE PROFESSORES -->
+					<div id='fields' class='listagem' style='display:block; width: 600px; height: 200px; margin: 0 auto'>
+					<fieldset>
+						<table>
+						<tr>
+							<td colspan='3'>
+								<div class='image_div2'>
+									<img src='css/imagens/professores/$id.jpg' style='width: 150px; heigth:150px; padding-right:30px;'>
+								</div>
+							</td>
+							<td style='width:100%;' colspan='4'>
+								<div style='margin:auto; width:auto;'>	<p style="margin:auto; width:100%; font-family:'Arial', sans-serif; font-size:25px;"><b><?php$nome?></p> </div>
+								<div style='margin:auto;'>	<p style="width:100%; font-family:'Arial', sans-serif; font-size:15px;"><?php$nome_dep?></p> </div>
+								<div style='margin:auto;'>	<p style="width:100%; font-family:'Arial', sans-serif; font-size:15px;"><?php$email?></p> </div>
+							</td>
+						</tr>
+						<tr>
+							<td>Critério</td>
+							<td>Excelente</td>
+							<td>Bom</td>
+							<td>Regular</td>
+							<td>Fraco</td>
+							<td>Ruim</td>
+							<td>Média</td>
+						</tr>			
+						<tr> <td>ASSIDUIDADE </td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>PONTUALIDADE</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>RELACIONAMENTO COM TURMA</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>CRITÉRIOS DE AVALIAÇÃO</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>DOMÍNIO DE CONTEÚDO</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>CLAREZA DE EXPLICAÇÃO</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>METODOLOGIA DE ENSINO</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>PROFUNDIDADE DE CONTEÚDO</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>PLANEJAMENTO DE AULA</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>DISPONIBILIDADE</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>COMPROMETIMENTO COM A APRENDIZAGEM</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>DINÂMICA</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>PRÁTICA</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>INTERDISCIPLINARIDADE</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						<tr> <td>MATERIAL DIDÁTICO</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> </tr>						
+						</table>	
+					</fieldset>
+					</div>
+
+		<script type="text/javascript">
+			$(function () {
+					$('#container').highcharts({
+						chart: {
+							type: 'bar'
+						},
+						colors: [
+						   '#00FF00', 
+						   '#88FF00', 
+						   '#FFFF00 ', 
+						   '#FFA500 ', 
+						   '#FF0000 ', 
+						   '#492970',
+						   '#f28f43', 
+						   '#77a1e5', 
+						   '#c42525', 
+						   '#a6c96a'
+						],
+						title: {
+							text: 'Avaliação de Professores'
+						},
+						xAxis: {
+							categories: ['Clareza de Explicação', 'Dinâmica de aula', 'Profundidade de conteúdo', 'Prática', 'Critérios de avaliação','Comprometimento com a aprendizagem','Domínio de conteúdo']
+						},
+						yAxis: {
+							min: 0,
+							title: {
+								text: 'média (porcentagem)'
+							}
+						},
+						legend: {
+							backgroundColor: '#FFFFFF',
+							reversed: true
+						},
+						plotOptions: {
+							series: {
+								stacking: 'normal'
+							}
+						},
+							series: [{
+							name: 'Excelente',
+							data: [0, 0, 0, 0,85, 0, 0]
+						}, {
+							name: 'Bom',
+							data: [65, 0, 76, 0, , 0, 0]
+						}, {
+							name: 'Regular',
+							data: [0, 0, 0, 52, 0, 0, 0]
+						}, {
+							name: 'Fraco',
+							data: [0, 0, 0, 0, 0, 39, 0]
+						}, {
+							name: 'Péssimo',
+							data: [0, 5, 0, 0, 0, 0, 12]
+						}]
+					});
+				});
+				
+    
+
+		</script>	
+	
+<script src="../../js/highcharts.js"></script>
+<script src="../../js/modules/exporting.js"></script>
+<div id="field" style="width: 600px; height: 200px; margin: 0 auto">
+	<table>
+		<tr>
+			<td>
+				<img src="http://localhost/CAIME/css/imagens/professores/yoda.jpg" style="width: 150px; heigth:150px; padding-right:30px;">
+			</td>
+			<td>
+				<p style="width:100%; font-family:'Arial', sans-serif; font-size:25px;"><b>Mestre Yoda</p>
+				<p style="width:100%; font-family:'Arial', sans-serif; font-size:15px;"><b>Disciplina:</b>IME00 17169 - Introdução à Sueca</b></p>
+				<p style="width:400px; font-family:'Arial', sans-serif; font-size:15px;"><b>Período:</b> 2013.1 </p>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="container" style="width: 600px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>

@@ -1,0 +1,26 @@
+[20-Mar-2014 23:50:12] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 91
+[20-Mar-2014 23:54:22] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[20-Mar-2014 23:55:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (25) in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 10
+[20-Mar-2014 23:56:03] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (25) in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 10
+[20-Mar-2014 23:57:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (25) in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[20-Mar-2014 23:57:32] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (25) in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[20-Mar-2014 23:59:10] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Unknown MySQL server host 'http' (25) in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[20-Mar-2014 23:59:35] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[21-Mar-2014 00:00:16] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[21-Mar-2014 00:00:27] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[21-Mar-2014 00:03:14] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:03:17] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:03:18] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 71 bytes) in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 91
+[21-Mar-2014 00:04:11] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'caime526_marlon'@'localhost' (using password: YES) in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[21-Mar-2014 00:04:55] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 11
+[21-Mar-2014 00:06:21] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:09:58] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 10
+[21-Mar-2014 00:10:20] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:11:02] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:13:41] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 10
+[21-Mar-2014 00:14:09] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't get hostname for your address in /home/caime526/public_html/computacaouerj.com.br/banco.php on line 10
+[21-Mar-2014 00:18:49] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:21:52] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 00:25:30] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 11:42:42] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158
+[21-Mar-2014 11:45:34] PHP Warning:  mysql_query(): supplied argument is not a valid MySQL-Link resource in /home/caime526/public_html/computacaouerj.com.br/sintese.php on line 158

@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Avaliação de Professores</title>
+		<link rel="stylesheet" type="text/css" href="http://www.caime.com.br/avaliacao/default.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+					$('#container').highcharts({
+						chart: {
+							type: 'bar'
+						},
+						colors: [
+						   '#00FF00', 
+						   '#88FF00', 
+						   '#FFFF00 ', 
+						   '#FFA500 ', 
+						   '#FF0000 ', 
+						   '#492970',
+						   '#f28f43', 
+						   '#77a1e5', 
+						   '#c42525', 
+						   '#a6c96a'
+						],
+						title: {
+							text: 'Avaliação de Professores'
+						},
+						xAxis: {
+							categories: ['Clareza de Explicação', 'Dinâmica de aula', 'Profundidade de conteúdo', 'Prática', 'Critérios de avaliação','Comprometimento com a aprendizagem','Domínio de conteúdo']
+						},
+						yAxis: {
+							min: 0,
+							title: {
+								text: 'média (porcentagem)'
+							}
+						},
+						legend: {
+							backgroundColor: '#FFFFFF',
+							reversed: true
+						},
+						plotOptions: {
+							series: {
+								stacking: 'normal'
+							}
+						},
+							series: [{
+							name: 'Excelente',
+							data: [0, 0, 0, 0,85, 0, 0]
+						}, {
+							name: 'Bom',
+							data: [65, 0, 76, 0, , 0, 0]
+						}, {
+							name: 'Regular',
+							data: [0, 0, 0, 52, 0, 0, 0]
+						}, {
+							name: 'Fraco',
+							data: [0, 0, 0, 0, 0, 39, 0]
+						}, {
+							name: 'Péssimo',
+							data: [0, 5, 0, 0, 0, 0, 12]
+						}]
+					});
+				});
+				
+    
+
+		</script>
+	</head>
+	<body>
+<script src="js/highcharts.js"></script>
+<script src="js/modules/exporting.js"></script>
+<div id="field" style="width: 600px; height: 200px; margin: 0 auto">
+	<table>
+		<tr>
+			<td>
+				<img src="http://localhost/CAIME/css/imagens/professores/yoda.jpg" style="width: 150px; heigth:150px; padding-right:30px;">
+			</td>
+			<td>
+				<p style="width:100%; font-family:'Arial', sans-serif; font-size:25px;"><b>Mestre Yoda</p>
+				<p style="width:100%; font-family:'Arial', sans-serif; font-size:15px;"><b>Disciplina:</b>IME00 17169 - Introdução à Sueca</b></p>
+				<p style="width:400px; font-family:'Arial', sans-serif; font-size:15px;"><b>Período:</b> 2013.1 </p>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="container" style="width: 600px; height: 400px; margin: 0 auto"></div>
+
+	</body>
+</html>
